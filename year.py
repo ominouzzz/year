@@ -1,5 +1,5 @@
-import datetime
-current_year = datetime.datetime.now().year
+from datetime import datetime
+current_year = datetime.now().year
 
 print('Прога определяет сколько лет тебе будет в будущем 8)')
 
@@ -12,10 +12,10 @@ while True:
 
 while True:
     future_year = int(input('Введи год, в котором ты хочешь узнать свой будущий возраст:'))
-    if current_year <= future_year <= 9999:
+    if current_year < future_year <= 9999:
         break
     else:
-        print('Введен некорректный год! Введи год в интервале от текущего до 9999 года')
+        print('Введен некорректный год! Введи год в интервале от следующего до 9999 года')
 
 future_age = future_year - current_year + current_age
 print('Итак, в', future_year, 'году тебе будет', future_age, 'лет')
