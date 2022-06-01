@@ -14,7 +14,9 @@ number_of_attempts = 8 // game_level
 
 hidden_number = randint(1, 100)
 print('Итак, я загадал число. Попробуй угадать')
+
 attempt_counter = 0
+
 while attempt_counter < number_of_attempts:
     print('Число попыток:', number_of_attempts - attempt_counter)
     user_number = int(input('Введи число в интервале от 1 до 100:'))
